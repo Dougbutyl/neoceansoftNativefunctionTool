@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">neoceansoftnativefunction</string>
+    <string name="app_sms">系统发送短信</string>
+    <string name="app_picture">系统相册</string>
+    <string name="app_dial">系统拨号</string>
+    <string name="app_web">系统浏览器</string>
+    <string name="app_share">系统分享</string>
+</resources>
