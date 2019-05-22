@@ -42,19 +42,19 @@ public class MainActivity extends AppCompatActivity implements RcAdapter.OnItemC
     public void onItemClik(int position) {
         switch (position) {
             case 0:
-                NativeFunctionUtils.sendMessage(MainActivity.this,"10086","这是发送短信内容");
+                NativeFunctionUtils.sendMessage(MainActivity.this, "10086", "这是发送短信内容");
                 break;
             case 1:
-                NativeFunctionUtils.toDial(MainActivity.this,"10086");
+                NativeFunctionUtils.toDial(MainActivity.this, "10086");
                 break;
             case 2:
-                NativeFunctionUtils.toTakePicture(10001,MainActivity.this);
+                NativeFunctionUtils.toTakePicture(10001, MainActivity.this);
                 break;
-            case 3:
-
+            case 3://此处只做文字内容分享，图片分享参照方法参数说明
+                NativeFunctionUtils.shareText(MainActivity.this, "此处为分享标题", "此处为分享内容");
                 break;
             case 4:
-                NativeFunctionUtils.toWebView(MainActivity.this,"");
+                NativeFunctionUtils.toWebView(MainActivity.this, "https://github.com/Dougbutyl/neoceansoftNativefunctionTool");
                 break;
         }
     }
